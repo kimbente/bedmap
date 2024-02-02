@@ -34,6 +34,10 @@ On roger:
     - across flow verus with flow: variance.
 - Combine with models: GP interpolation
 
+# Considerations:
+- direction of ice flow
+- spacing of lines
+
 ## Single dataset case: 
 - Grid over Ross ice shelf: Rosetta (selected because it is well documented) 
 - [Overview of flight lines](http://wonder.ldeo.columbia.edu/data/ROSETTA-Ice/GridInformation/Map/ROSETTA-Ice_Grid_Flown_Map.pdf)
@@ -45,9 +49,28 @@ On roger:
     - ca. 800 km wide
 - Horizontal spacing: roughly 10 km
 - Vertical spacing: 65 km
-- The planned ROSETTA-Ice Survey Grid would yield a total of 61,000km and 109 survey lines: 94 East-West lateral survey lines with 10km spacing, and 15 North-South tie-lines with 55km spacing
+- The planned ROSETTA-Ice Survey Grid would yield a total of 61,000 km and 109 survey lines: 94 East-West lateral survey lines with 10km spacing, and 15 North-South tie-lines with 55km spacing (i.e. 25 m data point spacing)
 
 # Plots
-- RMSE per measurement
-- Cells without any data
+- Main plot
+-   RMSE per measurement
+-   Cells without any data
 - Distribution of number of data points
+- per region
+- directionality
+
+# Resolutions
+- 2 km
+- 1 km
+- 500 m (Bedmap)
+- 250 m
+- 125 m 
+
+# Grid:
+
+- x = np.arange(-3333250, 3333750, 500)
+- y = np.arange(3333250, -3333750, 500) from top down
+
+- y goes from high to low
+- (0, 0) is where 4 gridcells intersect
+- (250, 250) is e.g. the mid point of that grid cell
