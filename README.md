@@ -64,13 +64,27 @@ On roger:
 - 1 km
 - 500 m (Bedmap)
 - 250 m
-- 125 m 
+- 125 m
+- 62.5
+- 31.25
 
 # Grid:
 
+(start is included, stop is excluded)
 - x = np.arange(-3333250, 3333750, 500)
+- So grid cell starts at -3333 k and ends 3333 k
 - y = np.arange(3333250, -3333750, 500) from top down
 
 - y goes from high to low
 - (0, 0) is where 4 gridcells intersect
 - (250, 250) is e.g. the mid point of that grid cell
+
+# Next steps:
+
+- One dataset:
+- Project
+- Assign measurments to grid
+- Calculate mean (same as some in the summerised)
+- Calculate error per measurement
+- Calculate number of cells with no data 
+
