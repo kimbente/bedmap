@@ -3,9 +3,14 @@
 - [SCAR project page for Bedmap](https://scar.org/science/excom/bedmap3)
 - [BAS project page for Bedmap](https://www.bas.ac.uk/project/bedmap/#about)
 - [Bedmap portal/tool](https://bedmap.scar.org/)
-    - lines are often still 10 km apart
-- [Bedmap data](https://www.bas.ac.uk/project/bedmap/#data)
-    - [Bedmap3 csv](https://ramadda.data.bas.ac.uk/repository/entry/show?entryid=91523ff9-d621-46b3-87f7-ffb6efcd1847) contains 50M data points (collected by alledgedly "17" data providers, consisting of 84 csv files, 6.7 GB; only 16 data providers listed)
+    - Observations: 
+        - Flight lines are often < 10 km apart
+        - Mountainous regions, for example the region North of Byrd glacier, are often not surveyed. However, a smooth, highly uncertain interpolation of ice thickness (rather than bed elevation) still results in complex appearing bed elevation.  
+- [Bedmap data via BAS data overview](https://www.bas.ac.uk/project/bedmap/#data)
+    - links to [Bedmap3 csv](https://ramadda.data.bas.ac.uk/repository/entry/show?entryid=91523ff9-d621-46b3-87f7-ffb6efcd1847) contains 50M data points (collected by alledgedly "17" data providers, consisting of 84 csv files, 6.7 GB; only 16 data providers listed)
+    - Bedmap3 is 53M additional data points.
+    - Bedmap2 is 27M additional data points.
+    - Bedmap1 is 2M data points. 
         - LDEO: Rosetta survey of the Ross ice sheet [Rosetta web page](https://www.ldeo.columbia.edu/res/pi/rosetta/)
         - NIPR small coverage flight lines are close together
         - Many other are 7-10 km apart
@@ -14,16 +19,16 @@
         - UTIG is considerable too.
     - RAMADA: `Repository for Archiving and MAnaging Diverse Data'
 
-Other of my code to look at:
+Related code repositories:
 - Visualisation code
 - Tutorial by Alice Fremand 
 - [GeoPhysics book](https://antarctica.github.io/PDC_GeophysicsBook/BEDMAP/data_available.html)
     - Download via ramadda or programmatically.
         - Programmatic download.
 
-On roger:
+Location of data on roger:
 - '/home/kim/data/bedmap/bedmap3-csv'
-
+- Combined data set "/home/kim/data/bedmap/bedmap123.csv"
 
 ## Research questions:
 - What theoretical loss are different resolutions associated with?
@@ -39,8 +44,8 @@ On roger:
 - spacing of lines
 
 ## Single dataset case: 
-- Grid over Ross ice shelf: Rosetta (selected because it is well documented) 
-- [Overview of flight lines](http://wonder.ldeo.columbia.edu/data/ROSETTA-Ice/GridInformation/Map/ROSETTA-Ice_Grid_Flown_Map.pdf)
+- Grid over Ross **ice shelf**: Rosetta (selected because it is well documented) 
+- [Overview of flight lines from Rosetta](http://wonder.ldeo.columbia.edu/data/ROSETTA-Ice/GridInformation/Map/ROSETTA-Ice_Grid_Flown_Map.pdf)
     - Sensor data and derived products
     - previously: RIGGS survey stations
 - At 500m res: what loss do we have
@@ -62,7 +67,7 @@ On roger:
 # Resolutions
 - 2 km
 - 1 km
-- 500 m (Bedmap)
+- 500 m (Bedmap gridded/BedMachine)
 - 250 m
 - 125 m
 - 62.5
