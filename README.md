@@ -1,5 +1,8 @@
 # Bedmap
 
+In this repository I process and analyse the recently published composite Bedmap data collection (including Bedmap 1, Bedmap 2, and Bedmap 3), with special emphisis on Bedmap 3. I provide a data cleaning pipeline to remove unrealistic values, so that this data can be used as a starting point to generate new interpolated continent-wide bed elevation, given the more up-to-date raw data collection out there.
+
+# Resources
 - [SCAR project page for Bedmap](https://scar.org/science/excom/bedmap3)
 - [BAS project page for Bedmap](https://www.bas.ac.uk/project/bedmap/#about)
 - [Bedmap portal/tool](https://bedmap.scar.org/)
@@ -64,7 +67,7 @@ Location of data on roger:
 - per region
 - directionality
 
-# Resolutions
+# Resolutions for gridding error
 - 2 km
 - 1 km
 - 500 m (Bedmap gridded/BedMachine)
